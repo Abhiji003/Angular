@@ -1,0 +1,66 @@
+<div class="image">
+  <div>
+    <div class="grid grid-cols-3">
+      <div class="container">
+        <a [class.card]="true" [class.active]="currentRoute === '/dashboard'" routerLink="/dashboard">Dashboard</a>
+        <a [class.card]="true" [class.active]="currentRoute === '/address-book'" routerLink="/address-book">Address Book</a>
+        <a [class.card]="true" [class.active]="currentRoute === '/add-contact'" routerLink="/add-contact">Add Contact</a>
+      </div>
+    </div>
+
+    <div class="title w-screen text-center list-outside text-7xl font-bold pt-11">Registration</div>
+    <form action="#">
+      <div class="user-details grid place-items-center mx-60 mt-20 mb-10 gap-10 md:grid-cols-2">
+        <div class="input-box"> 
+          <span class="details">First name</span>
+          <input type="text" placeholder="Your First Name*" required class="border-double rounded-2xl border-teal-400 hover:teal-400 border-rounded-2xl px-10 w-[30vw] text-left border-2 hover:border-black">
+        </div>
+        <div class="input-box">
+          <span class="details">Last Name</span>
+          <input type="text" placeholder="Your Last Name*" required class="border-double rounded-2xl border-teal-400 border-rounded-2xl px-10 w-[30vw] text-left border-2 hover:border-black">
+        </div>
+        <div class="input-box">
+          <span class="details">Telephone</span>
+          <input type="text" placeholder="Telephone*" required class="border-double rounded-2xl border-teal-400 border-rounded-2xl px-10 w-[30vw] text-left border-2 hover:border-black">
+        </div>
+        <div class="input-box">
+          <span class="details">Mobile</span>
+          <input type="text" placeholder="Mobile" required class="border-double rounded-2xl border-teal-400 border-rounded-2xl px-10 w-[30vw] text-left border-2 hover:border-black" size="30px">
+        </div>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="text" placeholder="abc@gmail.com" required class="border-double rounded-2xl border-teal-400 border-rounded-2xl px-10 w-[30vw] text-left border-2 hover:border-black" size="30px">
+        </div>
+        <div class="input-box">
+          <span class="details">Date Of Birth</span>
+          <input type="text" placeholder="dd/mm/yyyy" required class="border-double rounded-2xl border-teal-400 border-rounded-2xl px-10 w-[30vw] text-left border-2 hover:border-black" size="30px">
+        </div>
+        <div class="photo">
+          <span class="photo">Upload Your Photo</span>
+          <input type="file" id="myFile" name="filename">
+        </div>
+      </div>
+      <div class="mx-96">
+        <div class="input-box">
+          <span class="details">Address</span>
+          <br>
+          <textarea cols="80" rows="5" placeholder="Your Address"></textarea>
+          <br>
+        </div>
+        <div class="input-box">
+          <span class="details">Notes</span>
+          <input type="text" placeholder="Notes" required class="border-black px-28 text-left" size="30px">
+          <br>
+          <textarea cols="80" rows="5" placeholder="Your Notes"></textarea>
+          <br>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="grid w-screen place-content-center font-semibold px-10">
+    <button class="rounded-lg px-11 py-1 drop-shadow-2xl bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 mb-11 mt-5">
+      Save Changes
+    </button>
+  </div>
+</div>
